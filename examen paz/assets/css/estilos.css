@@ -1,0 +1,362 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+    list-style: none;
+    scroll-behavior: smooth;
+    text-decoration: none;
+
+}
+
+
+
+
+main {
+    height:auto;
+    position: relative;
+}
+
+
+:root {
+
+    --tono-p: 261;
+    --tono-s: 330;
+
+    --primario-500: hsla(var(--tono-p), 46%, 44%, 0.8);
+    --secundario-500: hsla(var(--tono-s), 90%, 61%, 1);
+
+    --secundario-900: hsla(var(--tono-s), 90%, 10%, 1);
+    --secundario-800: hsla(var(--tono-s), 90%, 20%, 1);
+    --secundario-700: hsla(var(--tono-s), 90%, 30%, 1);
+    --secundario-600: hsla(var(--tono-s), 90%, 40%, 1);
+    --secundario-400: hsla(var(--tono-s), 90%, 50%, 1);
+    --secundario-300: hsla(var(--tono-s), 90%, 70%, 0.3);
+    --secundario-200: hsla(var(--tono-s), 90%, 80%, 1);
+    --secundario-100: hsla(var(--tono-s), 90%, 90%, 1);
+    --secundario-50: hsla(var(--tono-s), 90%, 98%, 1);
+
+
+}
+
+
+
+
+
+
+.contenedor_maestro {
+    background-color: var(--secundario-900);
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 0rem;
+    scroll-snap-type: y mandatory;
+    position: relative;
+
+    
+
+}
+
+header.portada,
+section.contacto {
+
+    scroll-snap-align: start;
+    height: 100vh;
+    padding: 0;
+}
+
+
+header.portada{
+
+    background-image: linear-gradient(
+        hsla(318, 72%, 50%, 0.658),
+        hsla(283, 70%, 50%, 0.7)
+    ), url("../img/img3.jpg");
+
+    background-size: cover;
+    background-position: 0%;
+    background-attachment: fixed;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    animation: fondoBanner 10s ease-in-out infinite;
+
+}
+      
+header.portada h1 {
+    font-size: 3rem; 
+    color: var(--secundario-900); 
+    text-align: left; 
+    text-shadow: 2px 2px 4px var(--secundario-900); 
+    padding-left: 2rem; 
+    i{
+            flex-direction: column;
+        }
+
+
+
+}
+   
+header.portada p {
+
+    font-size: 2.5rem;
+    color: var(--secundario-700);
+    text-align: left;
+    margin-top: 1rem;
+    padding-left: 2rem;
+    display: grid;
+    flex-direction: column;
+    align-items: center; 
+}
+
+    
+  
+header.portada a {
+    font-size: 2rem; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--secundario-900);
+    margin-top: 7rem; 
+}
+
+header.portada i {
+    font-size: 2rem;
+    animation: flotable-flecha 3s infinite;
+    color: var(--secundario-900);
+}   
+    
+
+
+
+@keyframes fondoBanner {
+
+    0% {
+        background-position: 10%;
+    }
+
+    50% {
+        background-position: 85%;
+    }
+
+    100% {
+        background-position: 10%;
+    }
+}
+
+@keyframes flotable-flecha {
+
+    0% {
+        transform: translateY(-.5rem);
+    }
+
+    50% {
+        transform: translateY(1rem);
+    }
+
+    100% {
+        transform: translateY(-.5rem);
+    }
+
+}
+
+.rrss {
+    font-size: 2rem;
+    position: absolute;
+    justify-content: center;
+    top: 50%;
+    right:0px; 
+    transform: translateY(-50%) rotate(-90deg);
+    display: flex;
+    gap: .5rem;
+    
+}
+
+.rrss span{
+    top: 50%;
+    color: var(--secundario-900);
+    font-size: 2rem;
+    transition: color 0.3s;
+    font-size: 2rem;
+    position: absolute;
+    justify-content: center;
+    top: 20%;
+    right:0px; 
+    display: flex;
+    gap: .5rem;
+    
+    
+}
+
+.rrss a {
+    color: var(--secundario-900);
+    font-size: 2rem;
+    transition: color 0.3s;
+}
+
+
+
+.rrss a:hover {
+    color: var(--secundario-900);
+}
+
+
+.header-grid {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100vh;
+    gap: 20px;
+    align-items: center;
+
+    .ver_mas {
+        grid-column: 2 /3;
+    }
+
+    .rrss {
+        grid-column: 3/3;
+
+    }
+}
+
+
+.header-grid {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    height: 100vh;
+    gap: 20px;
+    align-items: center;
+
+    .ver_mas {
+        grid-column: 2 /3;
+    }
+
+    .rrss {
+        grid-column: 3/3;
+
+    }
+}
+
+
+
+.contacto {
+    scroll-snap-align: start;
+    background-color: var(--primario-500);
+    width: 100%;
+    height: 700px;
+    background-image: linear-gradient(
+        hsla(318, 72%, 50%, 0.658),
+        hsla(283, 70%, 50%, 0.7)),
+         url("../img/img2.jpg");
+    background-size: cover;
+    background-position: 30%;
+    background-attachment: fixed;
+    animation: fondobanner2 10s ease-in-out infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .h1{
+        display: flex;
+        flex-direction: column;
+        margin-top: 3rem;
+        text-align: center;
+    }
+    .p{
+        font-size: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 1rem;
+    }
+
+    div{
+        display: flex;
+        flex-direction: column;
+        gap: .5rem;
+        margin-bottom: 1rem;
+        color: var(--secundario-900);
+
+        select{
+            padding: .5rem;
+            border-radius: 0px;
+            border: 1px;
+        }
+    }
+
+    input[type="submit"]{
+        padding: 1rem;
+        width: 100%;
+
+        font-size: 1.2rem;
+        border-radius: 3rem;
+
+        border: 0px;
+
+        cursor: pointer;
+        background-color: var(--primario-500);
+        color: var(--secundario-50);
+
+        font-weight: 800;
+        position: sticky;
+        width: 50%;
+        left: 50%;
+        transform: translateX(-50%) translateY(10%);
+        
+        
+      
+        
+    }
+
+     input[type="submit"]:hover {
+        background-color: var(--secundario-500);
+        color: var(--secundario-50);
+     }
+
+}
+
+
+.contacto .form-contacto{
+    background-color: var(--secundario-300);
+    height: 500px;
+    width:600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 16px;
+    padding: 4px;
+}
+
+
+
+.contacto .form-contacto .form-item{
+    display: flex;
+    flex-direction: column;
+}
+
+ul {
+    display: flex;
+    gap: .5rem;
+}
+
+@keyframes fondobanner2 {
+
+    0% {
+        background-position: 10%;
+        background-size: 200%;
+    }
+
+    50% {
+        background-position: 85%;
+        background-size: 200%;
+    }
+
+    100% {
+        background-position: 10%;
+        background-size: 200%;
+    }
+}

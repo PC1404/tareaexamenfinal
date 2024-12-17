@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nomade Digital</title>
+
+
+    <link rel="stylesheet" href="assets/css/estilos.css" type="text/css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+
+
+</head>
+
+
+<body>
+
+    <main class="contenedor_maestro">
+
+        <header class="portada">
+
+            <div>
+                <h1>
+
+                    <i class='bx bx-world'></i>
+                    NOMADE DIGITAL
+                    
+
+                </h1>
+                
+                <p>Diseñadora Web</p>
+                
+            </div>
+            <div class="header-grid">
+                <a class="ver_mas" href="#cotizar">
+                    Ver más
+                    <i class='bx bx-chevron-down'></i>
+                </a>
+                <div class="rrss">
+                    <span>Conoce mis redes</span>
+                    <ul>
+                        <li>
+                            <a href="https://wa.me/56963953712">
+
+                                <i class='bx bxl-whatsapp'></i>
+
+                            </a>
+                        </li>
+
+                        <li>
+
+                            <a href="https://www.instagram.com/yank0_sunfl0wer/">
+
+                                <i class='bx bxl-instagram'></i>
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="https://www.behance.net/pazbelcarrasc">
+
+                                <i class='bx bxl-behance'></i>
+
+                            </a>
+
+                        </li>
+
+                        <li>
+
+                            <a href="https://github.com/PC1404">
+                                
+                                <i class='bx bxl-github'></i>
+
+                            </a>
+
+                        </li>
+
+
+
+                    </ul>
+                </div>
+            </div>
+
+        </header>
+
+        <section class="contacto" id="cotizar">
+
+            
+
+            <form action="enviar.php" method="Post" class="form-contacto">
+                <div>
+                    <h1>
+                        <i class='bx bx-world'></i>
+                        COTIZAR WEB
+                    </h1>
+                    <p>
+                        Recuerda que mientras más especifíco seas en tu explicación, el presupuesto tendrá un costo más acotado a tus necesidades y te lo podré enviar más rápido.
+                    </p>
+                </div>
+
+                <div class="form-item">
+                    <label for="nombre">Nombre</label>
+                    <input id="nombre" type="text" name="nombre" placeholder="tu nombre">
+                </div>
+                <div class="form-item">
+                    <label for="telefono"> Whatsapp</label>
+                    <input id="telefono" type="tel" name="telefono" placeholder="tu wsp con codigo de area" required>
+                </div>
+                <div class="form-item">
+                    <label for="email"> Email</label>
+                    <input id="email" type="mail" name="email" placeholder="tu correo electronico" required>
+                </div>
+                <div class="form-item">
+                    <label for="selecciona">Selecciona el tipo de web</label>
+                    <select name="tipoweb"  id="selecciona">
+                        <option value="one-page">One Page</option>
+                        <option value="corporativa">Corporativa</option>
+                        <option value="ecommerce">E-commerce</option>
+                        <option value="eleraning">E-learning</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+                <div class="form-item">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea name="mensaje"  id="mensaje" placeholder="hablame sobre las secciones de tu pagina"></textarea>
+                </div>
+                <div class="form-item">
+                    <label for="boceto">Sube un boceto de tu idea</label>
+                    <input type="file" name="boceto">
+                </div>
+
+                <input type="submit" value="cotizar">
+
+
+            </form>
+        </section>
+
+</body>
+
+
+
+
+</html>
